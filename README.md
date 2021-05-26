@@ -1,8 +1,8 @@
-svg2ttf
+svg2ttf-new
 =======
 
-[![CI](https://github.com/fontello/svg2ttf/actions/workflows/ci.yml/badge.svg)](https://github.com/fontello/svg2ttf/actions/workflows/ci.yml)
-[![NPM version](https://img.shields.io/npm/v/svg2ttf.svg?style=flat)](https://www.npmjs.org/package/svg2ttf)
+[![CI](https://github.com/yisibl/svg2ttf/actions/workflows/ci.yml/badge.svg)](https://github.com/yisibl/svg2ttf/actions/workflows/ci.yml)
+[![NPM version](https://img.shields.io/npm/v/svg2ttf-new.svg?style=flat)](https://www.npmjs.org/package/svg2ttf-new)
 
 > Converts SVG fonts to TTF format. It was initially written for
 [Fontello](http://fontello.com), but you can find it useful for your projects.
@@ -22,7 +22,7 @@ Using from CLI
 Install:
 
 ``` bash
-npm install -g svg2ttf
+npm install -g svg2ttf-new
 ```
 
 Usage example:
