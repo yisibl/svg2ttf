@@ -8,7 +8,7 @@
 'use strict'
 
 var _ = require('lodash')
-var SvgPath = require('svgpath')
+var SvgPath = require('@yisibl/svgpath')
 var ucs2 = require('./lib/ucs2')
 var svg = require('./lib/svg')
 var sfnt = require('./lib/sfnt')

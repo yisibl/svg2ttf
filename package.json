@@ -26,11 +26,11 @@
   },
   "dependencies": {
     "@xmldom/xmldom": "^0.9.10",
+    "@yisibl/svgpath": "^2.6.1",
     "argparse": "^2.0.1",
     "cubic2quad": "^1.2.1",
     "lodash": "^4.17.10",
-    "microbuffer": "^1.0.0",
-    "svgpath": "^2.1.5"
+    "microbuffer": "^1.0.0"
   },
   "devDependencies": {
     "eslint": "^9.39.4",
