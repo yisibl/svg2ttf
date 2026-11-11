@@ -63,6 +63,7 @@ describe('svg2ttf', function () {
   describe('os/2 table', function () {
     let parsed = opentype.parse(svg2ttf(fixture).buffer.buffer)
     let os2 = parsed.tables.os2
+    let hhea = parsed.tables.hhea
 
     it('winAscent + winDescent should include line gap', function () {
       // https://www.high-logic.com/font-editor/fontcreator/tutorials/font-metrics-vertical-line-spacing
@@ -70,7 +71,12 @@ describe('svg2ttf', function () {
       // always should be >=, but for this specific test they should be equal
       assert.strictEqual(
         os2.usWinAscent + os2.usWinDescent,
-        os2.sTypoAscender - os2.sTypoDescender + os2.sTypoLineGap)
+        os2.sTypoAscender - os2.sTypoDescender + hhea.lineGap)
+    })
+
+    it('lineGap is written to hhea, not to OS/2 sTypoLineGap', function () {
+      assert.strictEqual(hhea.lineGap, 90)
+      assert.strictEqual(os2.sTypoLineGap, 0)
     })
 
     it('os2.version = 4', function () {
