@@ -1,5 +1,14 @@
-svg2ttf
-=======
+svg2ttf-new
+===========
+
+> Fork of [fontello/svg2ttf](https://github.com/fontello/svg2ttf), kept as a
+> small patch stack on top of upstream (branch `svg2ttf-new`):
+>
+> - `lineGap` is written to `hhea` instead of OS/2 `sTypoLineGap`.
+> - Uses [@yisibl/svgpath](https://www.npmjs.com/package/@yisibl/svgpath),
+>   which converts arcs with huge radii correctly.
+>
+> Re-apply after upstream updates: `git fetch upstream && git rebase upstream/master`.
 
 [![CI](https://github.com/fontello/svg2ttf/actions/workflows/ci.yml/badge.svg)](https://github.com/fontello/svg2ttf/actions/workflows/ci.yml)
 [![NPM version](https://img.shields.io/npm/v/svg2ttf.svg?style=flat)](https://www.npmjs.org/package/svg2ttf)
@@ -22,7 +31,7 @@ Using from CLI
 Install:
 
 ``` bash
-npm install -g svg2ttf
+npm install -g svg2ttf-new
 ```
 
 Usage example:

@@ -1,6 +1,6 @@
 {
-  "name": "svg2ttf",
-  "version": "6.1.0",
+  "name": "svg2ttf-new",
+  "version": "6.1.0-beta.4",
   "description": "Converts SVG font to TTF font",
   "keywords": [
     "font",
@@ -10,7 +10,10 @@
   ],
   "author": "Sergey Batishchev <sergej.batishchev@gmail.com>",
   "license": "MIT",
-  "repository": "fontello/svg2ttf",
+  "repository": "yisibl/svg2ttf",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "bin": {
     "svg2ttf": "./svg2ttf.js"
   },
